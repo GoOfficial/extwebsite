@@ -36,38 +36,33 @@ body {
 
 /* Navbar */
 .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: sticky;
   top: 0;
   z-index: 100;
-  display: flex;
-  justify-content: center; /* centers the middle nav */
-  align-items: center;
-  padding: 15px 40px;
   background: rgba(20, 0, 30, 0.8);
+  padding: 15px 40px;
   border-bottom: 1px solid #4a0077;
 }
 
-.navbar-left {
+.logo {
   position: absolute;
   left: 40px;
 }
 
-.navbar-left .logo img {
+.logo img {
   height: 40px;
 }
 
-.navbar-center {
+.navbar-links ul {
   display: flex;
-  justify-content: center;
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
   gap: 25px;
+  list-style: none;
 }
 
-.nav-links a {
+.navbar-links a {
   color: #eee;
   text-decoration: none;
   font-size: 15px;
@@ -76,10 +71,11 @@ body {
   transition: 0.3s;
 }
 
-.nav-links a:hover {
+.navbar-links a:hover {
   background: #9900ff;
   box-shadow: 0 0 10px #c100ff;
 }
+
 
 
 @keyframes glowPurple {
