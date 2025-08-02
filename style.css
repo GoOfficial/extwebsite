@@ -36,29 +36,38 @@ body {
 
 /* Navbar */
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px 40px;
-  background: rgba(20, 0, 30, 0.8);
   position: sticky;
   top: 0;
   z-index: 100;
+  display: flex;
+  justify-content: center; /* centers the middle nav */
+  align-items: center;
+  padding: 15px 40px;
+  background: rgba(20, 0, 30, 0.8);
   border-bottom: 1px solid #4a0077;
+}
+
+.navbar-left {
+  position: absolute;
+  left: 40px;
 }
 
 .navbar-left .logo img {
   height: 40px;
 }
 
-.navbar-center nav ul {
+.navbar-center {
   display: flex;
-  list-style: none;
-  gap: 25px;
   justify-content: center;
 }
 
-.navbar-center nav a {
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links a {
   color: #eee;
   text-decoration: none;
   font-size: 15px;
@@ -67,10 +76,11 @@ body {
   transition: 0.3s;
 }
 
-.navbar-center nav a:hover {
+.nav-links a:hover {
   background: #9900ff;
   box-shadow: 0 0 10px #c100ff;
 }
+
 
 @keyframes glowPurple {
   from { text-shadow: 0 0 5px #d77aff; }
