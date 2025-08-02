@@ -50,12 +50,14 @@ body {
   border-bottom: 1px solid #4a0077;
 }
 .navbar .logo {
-  font-size: 26px;
-  color: #d77aff;
-  font-weight: bold;
   margin-right: 20px;
-  animation: glowPurple 2s infinite alternate;
+  display: flex;
+  align-items: center;
 }
+.navbar .logo img {
+  height: 40px;
+}
+
 @keyframes glowPurple {
   from { text-shadow: 0 0 5px #d77aff; }
   to { text-shadow: 0 0 15px #b300ff; }
