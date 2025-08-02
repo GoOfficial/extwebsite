@@ -241,3 +241,15 @@ section h2 {
   text-align: center;
   align-items: center;
 }
+
+#about,
+#external {
+  display: flex;
+  justify-content: center;
+}
+
+#about .glassy-box,
+#external .glassy-box {
+  max-width: 900px;
+  width: 100%;
+}
