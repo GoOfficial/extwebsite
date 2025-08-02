@@ -234,3 +234,10 @@ section h2 {
   color: #ccc;
   text-align: left;
 }
+
+#about .glassy-box,
+#external .glassy-box {
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+}
