@@ -39,20 +39,37 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 20px;
+  padding: 15px 40px;
   background: rgba(20, 0, 30, 0.8);
   position: sticky;
   top: 0;
   z-index: 100;
   border-bottom: 1px solid #4a0077;
 }
-.navbar .logo {
-  margin-right: 20px;
-  display: flex;
-  align-items: center;
-}
-.navbar .logo img {
+
+.navbar-left .logo img {
   height: 40px;
+}
+
+.navbar-center nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  justify-content: center;
+}
+
+.navbar-center nav a {
+  color: #eee;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.navbar-center nav a:hover {
+  background: #9900ff;
+  box-shadow: 0 0 10px #c100ff;
 }
 
 @keyframes glowPurple {
